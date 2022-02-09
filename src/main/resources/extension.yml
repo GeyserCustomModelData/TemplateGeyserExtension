@@ -1,0 +1,5 @@
+name: TemplateGeyserExtension
+version: 1.0
+main: com.github.geysercustommodeldata.templategeyserextension.TemplateGeyserExtension
+api: "2.0.1"
+loadTime: "PRE_INITIALIZE"
