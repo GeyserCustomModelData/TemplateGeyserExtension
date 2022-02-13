@@ -1,6 +1,6 @@
 package com.github.geysercustommodeldata.templategeyserextension.custom;
 
-import org.geysermc.geyser.api.custommodeldata.CustomItemData;
+import org.geysermc.geyser.api.custom.items.CustomItemData;
 
 public class MagicStick extends CustomItemData {
     public MagicStick() {

@@ -1,7 +1,7 @@
 package com.github.geysercustommodeldata.templategeyserextension;
 
-import com.github.geysercustommodeldata.templategeyserextension.managers.CustomItemManager;
-import org.geysermc.geyser.api.custommodeldata.CustomModelDataManager;
+import com.github.geysercustommodeldata.templategeyserextension.managers.ItemManager;
+import org.geysermc.geyser.api.custom.CustomManager;
 import org.geysermc.geyser.api.event.Subscribe;
 import org.geysermc.geyser.api.event.lifecycle.GeyserPreInitializeEvent;
 import org.geysermc.geyser.api.extension.Extension;
@@ -9,10 +9,11 @@ import org.geysermc.geyser.api.extension.Extension;
 public class TemplateGeyserExtension implements Extension {
     @Subscribe
     public void onPostInitialize(GeyserPreInitializeEvent event) {
-        CustomModelDataManager itemsManager = this.geyserApi().customModelDataManager();
-        CustomItemManager customItemManager = new CustomItemManager(itemsManager);
+        CustomManager customManager = this.geyserApi().customManager();
+
+        ItemManager itemManager = new ItemManager(customManager);
 
         this.logger().info("Adding custom items...");
-        customItemManager.init();
+        itemManager.init();
     }
 }
