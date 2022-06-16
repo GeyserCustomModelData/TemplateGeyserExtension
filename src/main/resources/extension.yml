@@ -1,5 +1,6 @@
-name: TemplateGeyserExtension
-version: 1.0
-main: com.github.geysercustommodeldata.templategeyserextension.TemplateGeyserExtension
-api: "2.0.1"
-loadTime: "PRE_INITIALIZE"
+name: TestGeyserExtension
+main: com.github.imdabigboss.testgeyserextension.TestGeyserExtension
+api: 2.0.0
+version: 1.0.0
+authors: [ImDaBigBoss]
+startup-phase: "PRE_INITIALIZE"
