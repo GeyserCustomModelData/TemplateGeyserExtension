@@ -1,4 +1,4 @@
-package com.github.imdabigboss.testgeyserextension;
+package com.github.imdabigboss.templategeyserextension;
 
 import org.geysermc.geyser.api.event.Subscribe;
 import org.geysermc.geyser.api.event.lifecycle.GeyserDefineCustomItemsEvent;
@@ -8,7 +8,7 @@ import org.geysermc.geyser.api.item.custom.CustomItemData;
 import org.geysermc.geyser.api.item.custom.CustomItemOptions;
 import org.geysermc.geyser.api.item.custom.NonVanillaCustomItemData;
 
-public class TestGeyserExtension implements Extension {
+public class TemplateGeyserExtension implements Extension {
     @Subscribe
     public void onPreInitialize(GeyserPreInitializeEvent event) {
         this.logger().info("TemplateGeyserExtension is loaded!");
